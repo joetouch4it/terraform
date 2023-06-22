@@ -18,13 +18,13 @@ module "s3_backend" {
   name = "jozef-tf-state"
 }
 
-terraform {
-  backend "s3" {
-    region         = "eu-central-1"
-    bucket         = "jozef-tf-state"
-    key            = "backend-terraform.tfstate"
-    dynamodb_table = "jozef-tf-state-lock"
-    profile        = "touchacademy"
-    encrypt        = true
-  }  
-}
+# terraform {
+#   backend "s3" {
+#     region         = "eu-central-1"
+#     bucket         = "jozef-tf-state"
+#     key            = "backend-terraform.tfstate"
+#     dynamodb_table = "jozef-tf-state-lock"
+#     profile        = "touchacademy"
+#     encrypt        = true
+#   }  
+# }
